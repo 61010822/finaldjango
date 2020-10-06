@@ -1,0 +1,45 @@
+{% extends 'frontend/base.html' %}
+{% block title %} FORM {% endblock %}
+{% block content %}
+<div class="container">
+    <form action="addform" method="get">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputHowmuch">NumberAlbum</label>
+              <input type="text" class="form-control" id="inputHowmuch" name="NumberAlbum">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputContact">YourContact</label>
+              <input type="text" class="form-control" id="inputContact" name="YourContact">
+            </div>
+          </div>
+          <div class="form-group ">
+            <label for="inputDeliverly">Deliverly</label>
+            <input type="text" class="form-control" id="inputDeliverly" name="Deliverly">
+          </div>
+        
+        
+        <div class="form-group">
+          <label for="inputCard">Select Card</label>
+          <input type="text" class="form-control" id="inputAddress" name="SelectCard">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" name="Main">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-10">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" name="city">
+          </div>
+          
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip" name="zip">
+          </div>
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Confirm</button>
+      </form>
+</div>
+  {% endblock %}
